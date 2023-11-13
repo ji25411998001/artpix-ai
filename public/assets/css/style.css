@@ -658,3 +658,14 @@ a {
 .js-img-compare img, .image img{
     width: 100% !important;
 }
+
+img{
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .py-6{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}

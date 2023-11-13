@@ -1,0 +1,398 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Artpix AI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&amp;family=Inter:wght@700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link
+        href="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/src/assets/css/images-compare.css"
+        rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/assets/css/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+
+        <!-- Navbar Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a class="navbar-brand p-0">
+                    <h1 class="m-0">Artpix AI</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-expanded="false">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="/" class="nav-item nav-link">Home</a>
+                        <a href="/text-to-image" class="nav-item nav-link">Text to Image</a>
+                        <a href="/image-to-image" class="nav-item nav-link">Image to image</a>
+                        <!-- <a href="/remove-background" class="nav-item nav-link">Remove background</a>
+                        <a href="/upscale" class="nav-item nav-link">Upscale</a>
+                        <a href="/unblur" class="nav-item nav-link">Unblur</a>
+                        <a href="/blur-background" class="nav-item nav-link">blur background</a>
+                        <a href="/colorizer" class="nav-item nav-link">Colorizer</a> -->
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div> <!-- Navbar End -->
+
+
+    <!-- header Start -->
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="mx-auto text-center wow fadeInUp m-5" data-wow-delay="0.1s"
+                style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1>Free AI Generator</h1>
+                    <p>
+                        *Free forever
+                    </p>
+            </div>
+        </div>
+    </div>
+    <!-- header End -->
+
+
+    <div class="container-fluid py-5">
+        <div class="container">
+
+            <div class="row justify-content-center wow fadeInUp mb-5" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 p-md-5 p-sm-3">
+                    <div class="image">
+                        <img src="/assets/pic/car.png"
+                                alt="Before">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-5 p-md-5 p-sm-3 d-flex flex-column justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0 mb-4">AI text generator</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            The AI Text Generator is like a wizard, not merely a tool for easy text creation. It possesses the magical ability to skillfully combine words, creating enchanting tales. With its power to understand and analyze text meaning, the AI Text Generator crafts stories that are both fascinating and one-of-a-kind.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lightBlue mt-md-5 mt-sm-3 ps-5 pe-5">Try it!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center wow fadeInUp mb-5" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 p-md-5 p-sm-3">
+                    <div class="js-img-compare">
+                        <div style="display: none;">
+                            <img src="/assets/pic/a1.png"
+                                alt="Before">
+                        </div>
+                        <div>
+                            <img src="/assets/pic/a2.png"
+                                alt="After">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-5 p-md-5 p-sm-3 d-flex flex-column justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0 mb-4">AI Art cartoon</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            AI Art Cartoon is not just a tool that makes creating cartoon images easy; it's more like an artist with the ability to transform ordinary pictures into adorable masterpieces! With a capability comparable to human artists in understanding the intricacies and patterns in images, AI Art Cartoon can create remarkable and charming works that are truly unique.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lightBlue mt-md-5 mt-sm-3 ps-5 pe-5">Try it!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center wow fadeInUp mb-5" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 p-md-5 p-sm-3">
+                    <div class="js-img-compare">
+                        <div style="display: none;">
+                            <img src="/assets/pic/b1.png"
+                                alt="Before">
+                        </div>
+                        <div>
+                            <img src="/assets/pic/b2.png"
+                                alt="After">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-5 p-md-5 p-sm-3 d-flex flex-column justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0 mb-4">AI Art anime</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            AI Art Anime goes beyond being a mere tool for simplifying the creation of anime-style images; it's akin to an artist with the ability to turn ordinary visuals into stunning anime masterpieces! Possessing a capability comparable to human artists, AI Art Anime can understand the nuances and artistic elements of images, resulting in the creation of remarkable and captivating anime artwork that is truly one-of-a-kind.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lightBlue mt-md-5 mt-sm-3 ps-5 pe-5">Try it!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row justify-content-center wow fadeInUp mb-5" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 p-md-5 p-sm-3">
+                    <div class="js-img-compare">
+                        <div style="display: none;">
+                            <img src="/assets/pic/a1.png"
+                                alt="Before">
+                        </div>
+                        <div>
+                            <img src="/assets/pic/a2.png"
+                                alt="After">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-5 p-md-5 p-sm-3 d-flex flex-column justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0 mb-4">AI Upscale</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            AI Upscale x4 is a cutting-edge solution designed to take image enhancement to the next level by quadrupling the resolution with unmatched precision! This powerful tool utilizes advanced artificial intelligence algorithms to analyze and magnify image details, resulting in a significant improvement in clarity, sharpness, and overall visual appeal.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lightBlue mt-md-5 mt-sm-3 ps-5 pe-5">Try it!</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="row justify-content-center wow fadeInUp mb-5" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 p-md-5 p-sm-3">
+                    <div class="js-img-compare">
+                        <div style="display: none;">
+                            <img src="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/assets/img/01-celine-skowron-after.jpg"
+                                alt="Before">
+                        </div>
+                        <div>
+                            <img src="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/assets/img/01-celine-skowron-before.jpg"
+                                alt="After">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-5 p-md-5 p-sm-3 d-flex flex-column justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0 mb-4">AI Remove background</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            AI Remove Background is more than just a tool it's a precision instrument designed to effortlessly eliminate backgrounds from images with unparalleled accuracy! This powerful AI technology employs advanced algorithms to intelligently identify and remove the background, leaving you with a clean, professional result.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lightBlue mt-md-5 mt-sm-3 ps-5 pe-5">Try it!</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="row justify-content-center wow fadeInUp mb-5" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 p-md-5 p-sm-3">
+                    <div class="js-img-compare">
+                        <div style="display: none;">
+                            <img src="/assets/pic/c1.png"
+                                alt="Before">
+                        </div>
+                        <div>
+                            <img src="/assets/pic/c2.png"
+                                alt="After">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-5 p-md-5 p-sm-3 d-flex flex-column justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0 mb-4">AI Unblur</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            AI Unblur is a powerful tool designed to restore clarity to images that may have been blurred due to various factors. This advanced AI technology utilizes sophisticated algorithms to intelligently analyze and enhance the details of blurred images, resulting in a significant improvement in sharpness and overall visual quality.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lightBlue mt-md-5 mt-sm-3 ps-5 pe-5">Try it!</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="row justify-content-center wow fadeInUp mb-5" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 p-md-5 p-sm-3">
+                    <div class="js-img-compare">
+                        <div style="display: none;">
+                            <img src="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/assets/img/01-celine-skowron-after.jpg"
+                                alt="Before">
+                        </div>
+                        <div>
+                            <img src="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/assets/img/01-celine-skowron-before.jpg"
+                                alt="After">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-5 p-md-5 p-sm-3 d-flex flex-column justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0 mb-4">AI Colorizer</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            AI Colorizer is a remarkable tool designed to breathe life into black and white images, adding vibrant and realistic colors with incredible precision! This cutting-edge AI technology employs advanced algorithms to analyze image content and intelligently apply color, transforming monochrome photographs into vivid, lifelike masterpieces.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lightBlue mt-md-5 mt-sm-3 ps-5 pe-5">Try it!</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="row justify-content-center wow fadeInUp mb-5" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 p-md-5 p-sm-3">
+                    <div class="js-img-compare">
+                        <div style="display: none;">
+                            <span class="images-compare-label">Before</span>
+                            <img src="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/assets/img/01-celine-skowron-after.jpg"
+                                alt="Before">
+                        </div>
+                        <div>
+                            <span class="images-compare-label">After</span>
+                            <img src="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/assets/img/01-celine-skowron-before.jpg"
+                                alt="After">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-5 p-md-5 p-sm-3 d-flex flex-column justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0 mb-4">AI Inpaint</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            AI Inpaint is a powerful tool designed to effortlessly remove unwanted elements from images with exceptional precision! This advanced AI technology utilizes sophisticated algorithms to intelligently analyze and inpaint, or fill in, the areas where objects have been removed, creating a seamless and natural-looking result.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lightBlue mt-md-5 mt-sm-3 ps-5 pe-5">Try it!</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="row justify-content-center wow fadeInUp mb-5" data-wow-delay="0.5s"
+                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 p-md-5 p-sm-3">
+                    <div class="js-img-compare">
+                        <div style="display: none;">
+                            <img src="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/assets/img/01-celine-skowron-after.jpg"
+                                alt="Before">
+                        </div>
+                        <div>
+                            <img src="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/assets/img/01-celine-skowron-before.jpg"
+                                alt="After">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-5 p-md-5 p-sm-3 d-flex flex-column justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0 mb-4">AI Blur background</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            AI Blur Background is a sophisticated tool designed to effortlessly add a professional touch to your images by applying a natural and aesthetically pleasing blur to the background! This advanced AI technology employs intelligent algorithms to analyze the image, identifying the subject, and applying a realistic depth of field effect.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-lightBlue mt-md-5 mt-sm-3 ps-5 pe-5">Try it!</button>
+                    </div>
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © 2023 Artpix-AI Officials. All rights reserved
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Contact</a>
+                            <a href="">Terms</a>
+                            <a href="">Privacy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style="display: none;"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://themewagon.github.io/bizconsult/lib/wow/wow.min.js"></script>
+    <script src="https://themewagon.github.io/bizconsult/lib/easing/easing.min.js"></script>
+    <script src="https://themewagon.github.io/bizconsult/lib/waypoints/waypoints.min.js"></script>
+    <script src="https://themewagon.github.io/bizconsult/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="https://themewagon.github.io/bizconsult/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script
+        src="https://www.jqueryscript.net/demo/Responsive-Mobile-friendly-Image-Comparison-Plugin-Images-Compare/src/assets/js/jquery.images-compare.js"></script>
+    <script>
+        $('.js-img-compare').imagesCompare();
+    </script>
+
+
+</body>
+
+</html>

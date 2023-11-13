@@ -1,1 +1,1 @@
-# artpix-123
+# artpix-ai

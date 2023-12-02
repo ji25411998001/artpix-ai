@@ -70,4 +70,8 @@ router.post('/:type', upload.single('file'), (req, res) => {
 
 });
 
+router.post('/test', (req, res) => {
+    res.send('okkkk');
+});
+
 module.exports = router;

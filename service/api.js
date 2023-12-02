@@ -71,7 +71,35 @@ router.post('/:type', upload.single('file'), (req, res) => {
 });
 
 router.get('/test', (req, res) => {
-    res.send('okkkk');
+    let data = {
+        "key": "lJDqwAAcnoZJo3k6boLhLTojo1E8p3gtLbapYnibSuqoEV9LFg3IgZsl5Eoq",
+        "model_id": "dark-sushi-mix-mix",
+        "prompt": "ultra realistic close up portrait ((beautiful pale cyberpunk female with heavy black eyeliner)), blue eyes, shaved side haircut, hyper detail, cinematic lighting, magic neon, dark red city, Canon EOS R3, nikon, f/1.4, ISO 200, 1/160s, 8K, RAW, unedited, symmetrical balance, in-frame, 8K",
+        "negative_prompt": "painting, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, deformed, ugly, blurry, bad anatomy, bad proportions, extra limbs, cloned face, skinny, glitchy, double torso, extra arms, extra hands, mangled fingers, missing lips, ugly face, distorted face, extra legs, anime",
+        "width": "512",
+        "height": "512",
+        "samples": "1",
+        "num_inference_steps": "20",
+        "seed": null,
+        "guidance_scale": 7.5,
+        "safety_checker": "yes",
+        "multi_lingual": "no",
+        "panorama": "no",
+        "self_attention": "no",
+        "upscale": "no",
+        "embeddings_model": null,
+        "webhook": null,
+        "track_id": null
+      };
+    axios.post('https://stablediffusionapi.com/api/v3/text2img', data)
+        .then(response => {
+
+            res.json(response.data)
+
+        })
+        .catch(error => {
+            res.json({'error': 1});
+        });
 });
 
 module.exports = router;
